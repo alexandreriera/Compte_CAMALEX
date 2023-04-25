@@ -113,7 +113,6 @@
                 </Grid>
                 <Grid Grid.Row="3" Grid.Column="1">
                     <Button Style="{StaticResource ButtonStyle}" >- DÉBIT</Button>
-					
                 </Grid>
                 <Grid Style="{StaticResource TwoColumnStyle}">
                     <Label Style="{StaticResource LabelStyle}">ÉVOLUTION DU SOLDE</Label>
