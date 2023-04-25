@@ -1,7 +1,7 @@
-﻿<Application x:Class="Compte_CAMALEX.App"
+﻿<Application x:Class="Compte.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:Compte_CAMALEX"
+             xmlns:local="clr-namespace:Compte"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          
