@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Compte_CAMALEX"
+        xmlns:views="clr-namespace:Compte_CAMALEX.Views"
         xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.WPF;assembly=LiveChartsCore.SkiaSharpView.WPF"
         mc:Ignorable="d"
         Title="COMPTE CAMALEX" Height="980" Width="1740">
@@ -47,12 +48,7 @@
                 <Setter Property="Padding" Value="160 50 30 50" />
                 <Setter Property="Margin" Value="0 80 0 0" />
             </Style>
-            <Style x:Key="ButtonStyle" TargetType="Button">
-                <Setter Property="FontSize" Value="24" />
-                <Setter Property="Margin" Value="10" />
-                <Setter Property="Padding" Value="10" />
-                <Setter Property="Grid.Column" Value="1" />
-            </Style>
+            
             <Style x:Key="TwoColumnStyle" TargetType="Grid">
                 <Setter Property="Grid.ColumnSpan" Value="2" />
                 <Setter Property="Grid.Column" Value="1" />
@@ -107,10 +103,12 @@
                     <TextBox Style="{StaticResource TextBoxStyle}">+ Somme en €</TextBox>
                 </Grid>
                 <Grid Grid.Row="2" Grid.Column="1" >
-                    <Button Style="{StaticResource ButtonStyle}">+ CRÉDIT</Button>
+                    <Button>+ CRÉDIT</Button>
                 </Grid>
                 <Grid Grid.Row="3" Grid.Column="1">
-                    <Button Style="{StaticResource ButtonStyle}" >- DÉBIT</Button>
+                    
+                <views:DebitView />
+                
                 </Grid>
                 <Grid Style="{StaticResource TwoColumnStyle}">
                     <Label Style="{StaticResource LabelStyle}">ÉVOLUTION DU SOLDE</Label>

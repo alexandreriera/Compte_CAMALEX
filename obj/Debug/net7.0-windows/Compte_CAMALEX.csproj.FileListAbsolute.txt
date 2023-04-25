@@ -37,3 +37,5 @@ C:\Users\alexa\source\repos\Compte_CAMALEX\bin\Debug\net7.0-windows\runtimes\win
 C:\Users\alexa\source\repos\Compte_CAMALEX\bin\Debug\net7.0-windows\runtimes\win-x64\native\libSkiaSharp.dll
 C:\Users\alexa\source\repos\Compte_CAMALEX\bin\Debug\net7.0-windows\runtimes\win-x86\native\libSkiaSharp.dll
 C:\Users\alexa\source\repos\Compte_CAMALEX\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\alexa\source\repos\Compte_CAMALEX\obj\Debug\net7.0-windows\Views\DebitView.g.cs
+C:\Users\alexa\source\repos\Compte_CAMALEX\obj\Debug\net7.0-windows\Views\DebitView.baml
