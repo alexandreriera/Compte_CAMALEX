@@ -112,26 +112,8 @@
                     <Button Style="{StaticResource ButtonStyle}">+ CRÉDIT</Button>
                 </Grid>
                 <Grid Grid.Row="3" Grid.Column="1">
-                    <Button Click="Show_Debit_Click" Style="{StaticResource ButtonStyle}" >- DÉBIT</Button>
-					<Popup Name="MyPopup"
-                       Placement="Mouse"
-                       HorizontalOffset="-100"
-                       VerticalOffset="-100"
-                       AllowsTransparency="False">
-						<Grid Background="White">
-						    <Rectangle Width="600" Height="300"/>
-							<Label Style="{StaticResource LabelStyle}">Entrez le montant de votre débit</Label>
-							<Grid HorizontalAlignment="center">
-							    <TextBox Name="montantDebit" Height="40" Width="100" FontSize="35"></TextBox>
-							</Grid>
-							<Grid  VerticalAlignment="bottom" >
-								<Button Margin="0 0 0 20" Width="100" Height="40" Click="Debiter" >Valider</Button>
-							</Grid>
-							<Grid VerticalAlignment="bottom"  HorizontalAlignment="right">
-								<Button Click="Hide_Debit_Click" Margin="0 0 20 20" Width="100" Height="40">X Fermer</Button>
-							</Grid>
-					    </Grid>
-					</Popup>
+                    <Button Style="{StaticResource ButtonStyle}" >- DÉBIT</Button>
+					
                 </Grid>
                 <Grid Style="{StaticResource TwoColumnStyle}">
                     <Label Style="{StaticResource LabelStyle}">ÉVOLUTION DU SOLDE</Label>
