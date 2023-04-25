@@ -7,10 +7,7 @@
         xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.WPF;assembly=LiveChartsCore.SkiaSharpView.WPF"
         mc:Ignorable="d"
         Title="COMPTE CAMALEX" Height="980" Width="1740">
-
-	    <Window.DataContext>
-			<local:ChartViewModel />
-	    </Window.DataContext>
+        
 
         <Window.Resources>
             <!-- Body Style -->
@@ -55,23 +52,24 @@
                 <Setter Property="Margin" Value="10" />
                 <Setter Property="Padding" Value="10" />
                 <Setter Property="Grid.Column" Value="1" />
-                <Setter Property="Background" Value="lightBlue" />
             </Style>
             <Style x:Key="TwoColumnStyle" TargetType="Grid">
                 <Setter Property="Grid.ColumnSpan" Value="2" />
                 <Setter Property="Grid.Column" Value="1" />
                 <Setter Property="Grid.Row" Value="4" />
             </Style>
-            <Style x:Key="ChartStyle" TargetType="Grid">
-                <Setter Property="Grid.Row" Value="5" />
-                <Setter Property="Grid.RowSpan" Value="2" />
-                <Setter Property="Grid.Column" Value="1" />
-                <Setter Property="Grid.ColumnSpan" Value="2" />
-            </Style>
+        <Style x:Key="ChartStyle" TargetType="Grid">
+            <Setter Property="Grid.Row" Value="5" />
+            <Setter Property="Grid.RowSpan" Value="2" />
+            <Setter Property="Grid.Column" Value="1" />
+            <Setter Property="Grid.ColumnSpan" Value="2" />
+        </Style>
 
     </Window.Resources>
 
-    
+    <Window.DataContext>
+        <local:ViewModel />
+    </Window.DataContext>
     
     <DockPanel Style="{StaticResource DockPanelStyle}">
             <Grid>
@@ -106,7 +104,7 @@
                 <!--Second column-->
                 <Grid Style="{StaticResource SmallCardStyle}">
                     <Label Style="{StaticResource LabelStyle}">SOLDE</Label>
-                    <TextBox Style="{StaticResource TextBoxStyle}" Text="{Binding Window.Solde}" />
+                    <TextBox Style="{StaticResource TextBoxStyle}">+ Somme en €</TextBox>
                 </Grid>
                 <Grid Grid.Row="2" Grid.Column="1" >
                     <Button Style="{StaticResource ButtonStyle}">+ CRÉDIT</Button>
