@@ -53,7 +53,7 @@ namespace Compte_CAMALEX.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Compte_CAMALEX;component/views/debitview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Compte_CAMALEX;V1.0.0.0;component/views/debitview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\DebitView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
